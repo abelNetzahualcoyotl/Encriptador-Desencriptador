@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="./images/Frame 6.png" alt="Logo de alura    " class="logo">
+    </header>
+    <main>
+        <section>
+            <textarea class="textarea" id="escribe"  cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            
+            <div class="aviso">
+                <img src="./images/bi_exclamation-circle-fill-1.png" class="imagen_inf">
+                <h6 class="información"> Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button id="encriptar" class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section>
+            
+            <textarea class="mensaje" id="muestra" cols="20" rows="18">
+                                
+            </textarea>
+            
+            <div>
+                <h3 class="texto1" id="ocultar1">Ningún mensaje fue encriptado</h3>
+                <h3 class="texto2" id="ocultar2">Ingrese el texto que desea encriptar o desencriptar</h3>
+            </div>
+        
+            <div>
+                <button class="copiar" id="botonC" onclick="botonCopiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="textoRodapie">Realizado por Abel Netzahualcóyotl Martínez Obregón, como parte de un reto del programa de capacitación ONE. Contacto abel.mtz.obregon@gmail.com</p>
+        
+    </footer>
+</body>
+
+</html>
