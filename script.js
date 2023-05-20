@@ -1,3 +1,4 @@
+//Agregando comentario para probar sincronización con GIthub
 function encriptar(){
     oculta();
     var arreglo=[];
